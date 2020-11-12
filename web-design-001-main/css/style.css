@@ -1,0 +1,141 @@
+body {
+  font-family: Karla;
+  text-align: center;
+
+}
+
+.hero {
+  height: 80vh;
+  padding: 1em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__heading {
+  font-size: 3.5em;
+  margin-bottom: 0.6em;
+  color: #fff
+}
+
+.hero__text {
+  font-size: 1.25em;
+  color: rgb(233, 233, 233);
+  width: 60%;
+  text-align: left;
+}
+
+.company-details {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.company-goal{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%
+}
+
+.packages-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom: 1px solid #E5E5E5;
+  
+}
+
+.packages{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  position: static;
+}
+
+.pkg{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pkg .pkg-img{
+  width: 250px;
+  height: 180px;
+  background-color: #E5E5E5;
+  margin-bottom: 35px;
+}
+
+.pkg .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  text-align: left;
+} 
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+#testimonials{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-control-prev{
+  color:white
+}
+
+.carousel-control-next{
+  color:white
+}
+
+.carousel-item{
+padding: 10% 10%;
+}
+
+.testimonial-image{
+  border-radius: 100%;
+  width: 3rem;
+  margin: 20px;
+
+}
+
+.footer-link{
+  color: #E5E5E5;
+  text-decoration: none;
+  padding: 50px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  
+}
+.footer-link:hover{
+  color:#03e3eb;
+}
+
+@media (max-width:900px ) {
+  .hero__text{
+    text-align: left;
+  }
+  .hero__heading{
+    text-align: center;
+  }
+  .packages-container{
+    position: static;
+  }
+ 
+}
