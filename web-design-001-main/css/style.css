@@ -1,7 +1,48 @@
 body {
-  font-family: Karla;
   text-align: center;
+}
 
+body, main, header{
+  font-family: Karla;
+  width: 100%;
+}
+
+header{
+  background-color: #17a2b8;
+}
+
+nav{
+  width: 90%;
+  margin: auto;
+  color: white;
+
+}
+
+.currency-slider {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: 15px;
+}
+
+.currency-slider .currency{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+.currency p:nth-child(even){
+  padding-right: 5px;
+  margin-right: 5px;
+  border-bottom: 2px solid lightgrey;
+
+}
+
+.currency p:last-child{
+  border-right: none;
 }
 
 .hero {
@@ -31,15 +72,15 @@ body {
 }
 
 .company-details {
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.company-goal{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%
+.company-intro{
+  width: 80%;
+  padding: 8px;
+  margin: auto;
+  text-align: left;
 }
 
 .packages-container{
@@ -49,7 +90,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  border-bottom: 1px solid #E5E5E5;
   margin-bottom: 20px;
   
 }
@@ -59,7 +99,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
   position: static;
 }
@@ -143,6 +183,15 @@ padding: 10% 10%;
 }
 
 @media screen and (max-width: 800px){
+
+  main, header, body{
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
   .packages-container{
     margin-top: 15px;
   }
@@ -155,5 +204,22 @@ padding: 10% 10%;
 
   .packages .pkg{
     margin: 8px;
+  }
+
+  .currency{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .currency p{
+    margin: 3px;
+  }
+
+  .currency p:nth-child(even){
+    padding: 0;
   }
 }
