@@ -1,7 +1,50 @@
 body {
-  font-family: Karla;
   text-align: center;
+}
 
+body, main, header{
+  font-family: Karla;
+  width: 100%;
+}
+
+header{
+  background-color: #17a2b8;
+}
+
+nav{
+  width: 90%;
+  margin: auto;
+  color: white;
+
+}
+
+.currency-slider {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: 20px;
+  /* background-color: lightgray; */
+}
+
+.currency-slider .currency{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid #17a2b8;
+}
+
+.currency p:nth-child(even){
+  border-right: 2px solid #17a2b8;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.currency p:last-child{
+  border-right: none;
 }
 
 .hero {
@@ -143,6 +186,15 @@ padding: 10% 10%;
 }
 
 @media screen and (max-width: 800px){
+
+  main, header, body{
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
   .packages-container{
     margin-top: 15px;
   }
@@ -155,5 +207,22 @@ padding: 10% 10%;
 
   .packages .pkg{
     margin: 8px;
+  }
+
+  .currency{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .currency p{
+    margin: 3px;
+  }
+
+  .currency p:nth-child(even){
+    padding: 0;
   }
 }
