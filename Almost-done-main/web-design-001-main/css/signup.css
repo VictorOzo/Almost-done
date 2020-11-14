@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    /* min-width: 50%; */
+    width: 100%;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.form-signup .signup{
+    margin-top: 40px;
+}
+.form-signup, .signup, .wallet-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup input:first-child{
+    margin-top: 15px;
+}
+
+.signup input{
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    padding-left: 4px;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 25px;
+}
+
+.signup input:focus{
+    outline: none;
+}
+
+.wallet-details div{
+    width: 400px;
+}
+
+.wallet-details{
+    margin-top: -10px;
+}
+
+.wallet-details div p{
+    margin: 0;
+}
+
+.wallet-details input{
+    border: 1px solid #c4c4c4;
+    margin-top: 0;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    padding-left: 4px;
+    border-radius: 5px;
+}
+
+.wallet-details input:focus{
+    outline: none;
+}
+
+.wallet-details div{
+    margin-bottom: 20px;
+}
+
+.wallet-details div:first-child{
+    margin-top: 10px;
+}
+
+.wallet-details div:last-child{
+    margin-bottom: 30px;
+}
+
+.wallet-details .terms-condition{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wallet-details .terms-condition a{
+    text-decoration: none;
+}
+
+.wallet-details .terms-condition input{
+    margin: 0;
+    width: 20px;
+}
+.wallet-details .terms-condition p{
+    margin: 0;
+}
+.form-signup button{
+    width: 20%;
+    height: 50px;
+    background-color: #c4c4c4;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    text-align: center;
+  }
+  
+  .footer-link{
+    color: #E5E5E5;
+    text-decoration: none;
+    padding: 50px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+  }
+  .footer-link:hover{
+    color:#11999E;
+  }
+
+@media screen and (max-width: 800px){
+    .form-signup button{
+        width: 40%;
+        height: 50px;
+    }
+}

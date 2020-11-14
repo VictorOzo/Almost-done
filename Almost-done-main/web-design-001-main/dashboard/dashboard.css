@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #17a2b8;
+    color: white;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    color: white;
+
+}
+
+
+body, .main-container, .dashboard{
+    width: 100%;
+    height: 100%;
+
+}
+
+.dashboard{
+    display: flex;
+}
+
+.dashboard .dashboard-links{
+    width: 30%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    border-right: 1px solid #17a2b8;
+}
+
+.dashboard-links .investor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #17a2b8;
+}
+
+.investor img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: crimson;
+}
+.investor .investor-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.investor .investor-details p{
+    margin: 1px;
+}
+
+.investor .actions{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.actions button{
+    width: 40%;
+    outline: none;
+    padding: 2px;
+    border: 1px solid lightgray;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.dash-links{
+    width: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.dash-links .link{
+    width: 100%;
+    margin: 4px;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+}
+
+.dash-links .link a{
+    text-decoration: none;
+    padding: 4px;
+    color: black;
+}
+
+
+.dashboard-content{
+    width: 70%;
+    /* border: 1px solid red;; */
+}
+
+.dashboard-content .content-container{
+    width: 90%;
+    padding: 4px;
+    display: flex;
+    margin: auto;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-container .account-container{
+    width: 220px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.account-container p:first-child{
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+}
+.account-container p:last-child{
+    margin-top: 30px;
+}
+
+
+.deposit-container .title{
+    border-bottom: 1px solid green;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+.deposit-container .value{
+    padding: 20px;
+    background-color: yellow;
+}
+
+.profit-container .title{
+    border-bottom: 1px solid yellow;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+.profit-container .value{
+    padding: 20px;
+    background-color: green;
+}
+
+.withdrawn-container .title{
+    border-bottom: 1px solid crimson;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+.withdrawn-container .value{
+    padding: 20px;
+    background-color: crimson;
+}
+
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    text-align: center;
+  }
+  
+  .footer-link{
+    color: #E5E5E5;
+    text-decoration: none;
+    padding: 50px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+  }
+  .footer-link:hover{
+    color:#11999E;
+  }
+  @media screen and (max-width: 1104px){
+    .investor .actions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+    }
+
+    .actions button{
+        margin: 8px;
+    }
+}
+
