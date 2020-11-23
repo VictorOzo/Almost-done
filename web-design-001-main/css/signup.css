@@ -110,6 +110,14 @@ main{
     text-align: center;
 }
 
+#signup:hover{
+    background-color: #17a2b8;
+}
+
+
+#signup:focus{
+    outline: none;
+}
 .bottom-container{
     background-color: #66BFBF;
     padding: 50px 0 20px;
