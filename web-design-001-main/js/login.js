@@ -1,4 +1,4 @@
-const userName   = document.querySelector('#user')
+const userEmail   = document.querySelector('#email')
 const userPassword = document.querySelector('#pass')
 const Btn_login = document.querySelector('#loginBtn');
 
@@ -6,11 +6,11 @@ function collectInfo (){
 
     let loginObj = {}
 
-    const Username = userName.value;
+    const email = userEmail.value;
     const password = userPassword.value;
 
     loginObj = {
-        Username,
+        email,
         password,
     }
 
