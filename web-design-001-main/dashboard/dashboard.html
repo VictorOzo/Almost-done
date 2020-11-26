@@ -35,7 +35,6 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="./deposit.html">DEPOSIT</a>
                 <a class="dropdown-item" href="./withdrawal.html">WITHDRAW</a>
-                <!-- <div class="dropdown-divider"></div> -->
                 <a class="dropdown-item" href="./referral.html">REFERRAL</a>
               </div>
             </li>
@@ -57,12 +56,12 @@
           <div class="investor">
             <img src="../images/logo.png" alt="profile image">
             <div class="investor-details">
-              <p>Abraham Lincoln</p>
-              <p>norepl@testing.com</p>
+              <p id="userName"></p>
+              <p id="userEmail"></p>
             </div>
             <div class="actions">
               <button><a class="active" href="./deposit.html">Deposit</a></button>
-              <button>Logout</button>
+              <button id="btn_logout">Logout</button>
             </div>
           </div>
           <ul class="dash-links">
@@ -114,5 +113,7 @@
       <p class="foot-note"><i class="fab fa-btc"></i> BITCOIN.</p>
       <p class="foot-note"><i class="fab fa-ethereum"></i>ETHEREUM.</p>
     </div>
+
+    <script src="../js/dashboard.js"></script>
   </body>
 </html>

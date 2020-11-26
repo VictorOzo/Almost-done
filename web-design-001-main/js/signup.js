@@ -40,11 +40,17 @@ const registerUser =  (e) => {
             'Content-Type': 'application/json',
         },
         cache: 'no-cache',
+        redirect: 'follow',
         body: JSON.stringify(newUserData)
-
-
     }).then(response => response.text())
-    .then(() => console.log('success')).catch(error => console.log(error))
+    .then((data) => {
+
+        const dataObj = JSON.parse(data)
+        const signupCredentials = dataObj.data
+        window.location.replace('./dashboard/deposit.html')
+        localStorage.setItem('Credentials', JSON.stringify(signupCredentials))
+        
+    }).catch(error => console.log(error))
 }
 
 window.addEventListener('submit', registerUser)

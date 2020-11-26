@@ -1,4 +1,4 @@
-const userName   = document.querySelector('#user')
+const userEmail   = document.querySelector('#email')
 const userPassword = document.querySelector('#pass')
 const Btn_login = document.querySelector('#loginBtn');
 
@@ -6,11 +6,11 @@ function collectInfo (){
 
     let loginObj = {}
 
-    const Username = userName.value;
+    const email = userEmail.value;
     const password = userPassword.value;
 
     loginObj = {
-        Username,
+        email,
         password,
     }
 
@@ -23,7 +23,6 @@ const loginUser =  (e) => {
     e.preventDefault()
 
     const loginData = collectInfo()
-    console.log(JSON.stringify(loginData))
 
     fetch('https://nameless-bayou-95782.herokuapp.com/login', {
         method: 'POST',
@@ -35,7 +34,13 @@ const loginUser =  (e) => {
         body: JSON.stringify(loginData)
 
     }).then(response => response.text())
-    .then(() => console.log('success')).catch(error => console.log(error))
+    .then((data) => {
+        const dataObj = JSON.parse(data)
+        const loginCredentials = dataObj.data.user
+        window.location.replace("./dashboard/dashboard.html")
+        localStorage.setItem('Credentials', JSON.stringify(loginCredentials))
+
+    }).catch(error => console.log(error))
 }
 
 window.addEventListener('submit', loginUser)
