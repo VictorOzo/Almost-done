@@ -43,10 +43,31 @@ button a:hover{
         align-items: center;
         width: 100%;
         height: 70%;
-        border: 1px solid red;
     }
 
     .actions button{
         margin: 8px;
+    }
+}
+
+@media screen and (max-width: 427px){
+    .dashboard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard .dashboard-links, .dashboard-content, .content-container{
+        width: 100%;
+    }
+
+    .packages{
+        width: 100%;
+    }
+
+
+    .withdraw-form-container #btn-invest{
+        width: 100px;
     }
 }
