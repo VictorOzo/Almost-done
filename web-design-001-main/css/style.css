@@ -226,7 +226,7 @@ padding: 10% 10%;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
   .hero {
     padding: 10px 0;
     display: flex;
