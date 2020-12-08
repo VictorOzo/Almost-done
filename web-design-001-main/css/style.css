@@ -11,6 +11,10 @@ header{
   background-color: #17a2b8;
 }
 
+.show-dropdown{
+  display: none;
+}
+
 nav{
   width: 90%;
   margin: auto;

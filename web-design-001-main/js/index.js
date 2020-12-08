@@ -1,4 +1,7 @@
 
+const dropdown = document.querySelector('.dropdown')
+
+
 const url = 'http://data.fixer.io/api/latest?access_key=2f0122b7a0ea478a90811c399aa2d117&symbols=USD,AUD,CAD,GBP,JPY&format=1';
 
 const currencySlider = document.querySelector('.currency')
@@ -21,11 +24,8 @@ fetchCurrency().then((data) => {
 }).catch(e => {throw new Error})
 
 function createCurrencyElement (obj, arrayvalue) {
-
     const pQuote = document.createElement('p')
     const pValue = document.createElement('p')
-    // const pQouteNode = document.createTextNode(`${obj.base}/${arrayvalue}`)
-    // const pValueNode = document.createTextNode(`${obj.rates[arrayvalue]}`)
     pQuote.append(`${obj.base}/${arrayvalue}`)
     pValue.append(`${obj.rates[arrayvalue]}`)
 
@@ -37,3 +37,13 @@ function createCurrencyElement (obj, arrayvalue) {
 }
 
 
+function checkLogin () {
+    const userInfo = JSON.parse(localStorage.getItem('Credentials'))
+
+    if (!userInfo){
+        dropdown.classList.add('show-dropdown')
+    }
+
+}
+
+window.addEventListener('load', checkLogin)

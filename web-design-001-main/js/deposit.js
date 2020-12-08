@@ -8,6 +8,9 @@ let userCredentials = {}
 function retreiveInfo (){
     const userInfo = JSON.parse(localStorage.getItem('Credentials'))
 
+    if (!userInfo){
+        return window.location.assign('../loginpage.html')
+    }
 
     userCredentials = userInfo
     username.innerText = userCredentials.name;

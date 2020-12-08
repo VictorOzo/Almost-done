@@ -1,6 +1,8 @@
 const userEmail   = document.querySelector('#email')
 const userPassword = document.querySelector('#pass')
 const Btn_login = document.querySelector('#loginBtn');
+const dropdown = document.querySelector('.dropdown')
+
 
 function collectInfo (){
 
@@ -42,5 +44,16 @@ const loginUser =  (e) => {
 
     }).catch(error => console.log(error))
 }
+
+function checkLogin () {
+    const userInfo = JSON.parse(localStorage.getItem('Credentials'))
+
+    if (!userInfo){
+        dropdown.classList.add('show-dropdown')
+    }
+
+}
+
+window.addEventListener('load', checkLogin)
 
 window.addEventListener('submit', loginUser)

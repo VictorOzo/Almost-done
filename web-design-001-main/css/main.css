@@ -53,6 +53,11 @@
       height: 100%;
       font-family: Poppins-Regular, sans-serif;
   }
+
+  .show-dropdown{
+    display: none;
+  }
+  
   
   /*---------------------------------------------*/
   a {
