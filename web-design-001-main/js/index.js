@@ -43,6 +43,7 @@ function checkLogin () {
     if (!userInfo){
         dropdown.classList.add('show-dropdown')
     }
+    dropdown.classList.remove('show-dropdown')
 
 }
 
