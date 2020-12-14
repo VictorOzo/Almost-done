@@ -118,6 +118,11 @@ main{
 #signup:focus{
     outline: none;
 }
+
+.show-dropdown{
+    display: none;
+}
+  
 .bottom-container{
     background-color: #66BFBF;
     padding: 50px 0 20px;

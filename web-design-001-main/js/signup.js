@@ -5,6 +5,8 @@ const btcAddress = document.querySelector('#btc')
 const ethAdress = document.querySelector('#eth')
 const trxAddress = document.querySelector('#trx')
 const btn_signup = document.querySelector('#signup');
+const dropdown = document.querySelector('.dropdown')
+
 
 function collectInfo (){
 
@@ -52,5 +54,18 @@ const registerUser =  (e) => {
         
     }).catch(error => console.log(error))
 }
+
+function checkLogin () {
+    const userInfo = JSON.parse(localStorage.getItem('Credentials'))
+
+    if (!userInfo){
+        dropdown.classList.add('show-dropdown')
+    }
+
+}
+
+
+
+window.addEventListener('load', checkLogin)
 
 window.addEventListener('submit', registerUser)

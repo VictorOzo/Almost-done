@@ -76,3 +76,27 @@ table td{
   .footer-link:hover{
     color:#11999E;
   }
+
+
+  @media screen and (max-width: 427px){
+    .dashboard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard .dashboard-links, .dashboard-content, .content-container{
+        width: 100%;
+    }
+
+    .ref-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .dashboard-content{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
