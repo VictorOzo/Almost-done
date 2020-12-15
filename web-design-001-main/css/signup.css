@@ -148,3 +148,26 @@ main{
         height: 50px;
     }
 }
+
+
+@media screen and (max-width: 500px){
+    .form-signup, .signup, .wallet-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .signup input{
+        width: 80%;
+    }
+    .wallet-details div{
+        width: 100%;
+    }
+
+    .wallet-details input{
+        width: 80%
+    }
+}
