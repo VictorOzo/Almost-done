@@ -122,25 +122,6 @@ main{
 .show-dropdown{
     display: none;
 }
-  
-.bottom-container{
-    background-color: #66BFBF;
-    padding: 50px 0 20px;
-    text-align: center;
-  }
-  
-  .footer-link{
-    color: #E5E5E5;
-    text-decoration: none;
-    padding: 50px;
-    margin: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    
-  }
-  .footer-link:hover{
-    color:#11999E;
-  }
 
 @media screen and (max-width: 800px){
     .form-signup button{

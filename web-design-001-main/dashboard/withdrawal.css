@@ -27,27 +27,22 @@ button a:hover{
 
 .withdraw-form-container{
     background-color: #17a2b8;
-    width: 100%;
-    height: 90px;
+    width: 90%;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
+    margin-top: 25px;
 }
 
-
-@media screen and (max-width: 1104px){
-    .investor .actions{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 70%;
-    }
-
-    .actions button{
-        margin: 8px;
-    }
+.withdraw-form-container #btn-invest{
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 7px;
 }
 
 @media screen and (max-width: 427px){
@@ -66,6 +61,9 @@ button a:hover{
         width: 100%;
     }
 
+    .withdraw-form-container{
+        width: 100%;
+    }
 
     .withdraw-form-container #btn-invest{
         width: 100px;
