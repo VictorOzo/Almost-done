@@ -6,7 +6,7 @@ const ethAddress = document.querySelector('#ethAddress')
 const tronAddress = document.querySelector('#tronAddress')
 const loginBtn = document.querySelector('.login')
 const signInBtn = document.querySelector('.sign-in')
-
+const btnInvest = document.querySelector('#btn-invest')
 
 let userCredentials = {}
 
@@ -46,8 +46,12 @@ function logoutUser(){
     window.location.replace('../index.html')
 }
 
+function actionDeposit(e){
+    e.preventDefault()
+    window.location.assign('https://localbitcoins.com/')
+}
+
 window.addEventListener('load', checkLogin)
-
-
 logoutBtn.addEventListener('click', logoutUser)
 window.addEventListener('load', retreiveInfo)
+btnInvest.addEventListener('click', actionDeposit)

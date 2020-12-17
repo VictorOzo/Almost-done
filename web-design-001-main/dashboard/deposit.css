@@ -128,6 +128,31 @@ form button:focus{
     outline: none;
 }
 
+.payment-wallet-details{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid grey;
+    margin-top: 15px;
+
+}
+.payment-wallet-details span{
+    font-size: 20px;
+}
+.payment-wallet-details div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-wallet-details p{
+    width: 60%;
+    background: lightgrey;
+}
+
 @media screen and (max-width: 427px){
     .dashboard{
         width: 100%;
@@ -188,5 +213,21 @@ form button:focus{
         width: 100%;
         text-align: center;
     
+    }
+    .payment-wallet-details{
+        width: 100%;
+    }
+
+    .payment-wallet-details span{
+        font-size: 20px;
+    }
+    .payment-wallet-details div{
+        flex-direction: column;
+    }
+    .payment-wallet-details p{
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: -8px;
     }
 }
