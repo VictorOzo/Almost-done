@@ -8,7 +8,7 @@ const btn_signup = document.querySelector('#signup');
 const dropdown = document.querySelector('.dropdown')
 
 
-function collectInfo (){
+function collectInfo (){ 
 
     let newUserObj = {}
 
@@ -18,6 +18,23 @@ function collectInfo (){
     const bitcoinWalletAddress = btcAddress.value;
     const ethereumWalletAddress = ethAdress.value;
     const tronWalletAddress = trxAddress.value;
+
+    if (bitcoinWalletAddress.length < 27 || bitcoinWalletAddress.length > 37 ){
+        btcAddress.value = "ADDRESS TOO SHORT"
+        throw new Error()
+    }
+
+    if (ethereumWalletAddress.length < 27){
+        btcAddress.value = "ADDRESS TOO SHORT"
+        throw new Error()
+
+    }
+
+    if (tronWalletAddress.length < 27){
+        btcAddress.value = "ADDRESS TOO SHORT"
+        throw new Error()
+
+    }
 
     newUserObj = {
         name,
@@ -51,6 +68,7 @@ const registerUser =  (e) => {
         const signupCredentials = dataObj.data
         window.location.replace('./dashboard/deposit.html')
         localStorage.setItem('Credentials', JSON.stringify(signupCredentials))
+        console.log(dataObj)
         
     }).catch(error => console.log(error))
 }
@@ -67,5 +85,4 @@ function checkLogin () {
 
 
 window.addEventListener('load', checkLogin)
-
 window.addEventListener('submit', registerUser)

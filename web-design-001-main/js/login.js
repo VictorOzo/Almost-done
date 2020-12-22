@@ -38,7 +38,7 @@ const loginUser =  (e) => {
     }).then(response => response.text())
     .then((data) => {
         const dataObj = JSON.parse(data)
-        const loginCredentials = dataObj.data.user
+        const loginCredentials = dataObj.data
         window.location.replace("./dashboard/dashboard.html")
         localStorage.setItem('Credentials', JSON.stringify(loginCredentials))
 

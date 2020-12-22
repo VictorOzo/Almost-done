@@ -30,20 +30,20 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <strong>DEPOSIT</strong>  
+                <strong>DASHBOARD</strong>  
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./deposit.html">DEPOSIT</a>
-                <a class="dropdown-item" href="./withdrawal.html">WITHDRAW</a>
-                <a class="dropdown-item" href="./referral.html">REFERRAL</a>
+              <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./dashboard/dashboard.html">DASHBOARD</a>
+                <a class="dropdown-item" href="./dashboard/deposit.html">DEPOSIT</a>
+                <a class="dropdown-item" href="./dashboard/withdrawal.html">WITHDRAW</a>
               </div>
             </li>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <a class="btn btn-dark" href="../loginpage.html" role="button"><strong>LOGIN</strong></a>
+              <a class="btn btn-dark login" href="../loginpage.html" role="button"><strong>LOGIN</strong></a>
             </form>
             <li class="nav-item">
-            <a class="nav-link" href="../signup.html" tabindex="-1" aria-disabled="true"><strong>SIGN UP</strong></a>
+            <a class="nav-link sign-in" href="../signup.html" tabindex="-1" aria-disabled="true"><strong>SIGN UP</strong></a>
             </li>
           </ul>
          
@@ -56,63 +56,96 @@
           <div class="investor">
             <img src="../images/logo.png" alt="profile image">
             <div class="investor-details">
-              <p id="userName"></p>
-              <p id="userEmail"></p>
+              <div class="i-details">
+                <p id="userName"></p>
+                <p id="userEmail"></p>
+              </div>
+              <div class="wallets">
+                <p id="btcAddress"></p>
+                <p id="ethAddress"></p>
+                <p id="tronAddress"></p>
+              </div>
             </div>
             <div class="actions">
-              <button><a class="active" href="./deposit.html">Deposit</a></button>
+              <button><a class="active" href="./edituser.html">Edit</a></button>
               <button id="btn_logout">Logout</button>
             </div>
           </div>
           <ul class="dash-links">
+            <li class="link"><a href="./dashboard.html">Dashboard</a></li>
             <li class="link"><a href="./deposit.html">Deposit</a></li>
-            <li class="link"><a href="./referral.html">Referral</a></li>
             <li class="link"><a href="./withdrawal.html">Withdraw</a></li>
           </ul>
         </div>
         <div class="dashboard-content">
+          <span>Acccount Overview</span>
           <div class="content-container">
             <div class="deposit-container account-container">
               <p class="title">
-                Depossit
+                Total Deposit
               </p>
-              <p class="value">
-                #$$$$$$
+              <p class="value deposit-value">
+                0
               </p>
             </div>
 
             <div class="profit-container account-container">
               <p class="title">
-                Profit
+                Total Profit
               </p>
-              <p class="value">
-                #$$$$$$
+              <p class="value profit-value">
+                0
               </p>
             </div>
 
             <div class="withdrawn-container account-container">
               <p class="title">
-                Withdrawn
+                Total Withdraw
               </p>
-              <p class="value">
-                #$$$$$$
+              <p class="value withdraw-value">
+                0
               </p>
             </div>
+          </div>
+          <div class="referral-container">
+            <form class="ref-container">
+              <input name='referral-link' type="text" placeholder="user-referral-link">
+              <button>Copy</button>
+            </form>
+            <table>
+              <tr>
+                <td>Referrals:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Active referrals:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Total Referral Commision</td>
+                <td>0</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </main>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">About Us</a>
-      <a class="footer-link" href="https://twitter.com/">FAQ</a>
-      <a class="footer-link" href="loginpage.html">LOGIN</a>
-      <a class="footer-link" href="https://forexfactory.com/">News</a>
+    <footer class="bottom-container">
+      <div class="footer-links">
+        <a class="footer-link" href="https://www.linkedin.com/">About Us</a>
+        <a class="footer-link" href="https://twitter.com/">FAQ</a>
+        <a class="footer-link" href="loginpage.html">LOGIN</a>
+        <a class="footer-link" href="https://forexfactory.com/">News</a>
+      </div>
 
-      <p class="foot-note">© Elite Miners 2020.</p>
-      <p class="foot-note"><i class="fab fa-btc"></i> BITCOIN.</p>
-      <p class="foot-note"><i class="fab fa-ethereum"></i>ETHEREUM.</p>
-    </div>
+      <div class="footnote">
+        <p class="foot-note">© Elite Miners 2020.</p>
+        <p class="foot-note"><i class="fab fa-btc"></i> BITCOIN.</p>
+        <p class="foot-note"><i class="fab fa-ethereum"></i>ETHEREUM.</p>
+      </div>
+
+    </footer>
 
     <script src="../js/dashboard.js"></script>
   </body>

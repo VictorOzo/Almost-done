@@ -30,12 +30,12 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <strong>DEPOSIT</strong>  
+                        <strong>DASHBOARD</strong>  
                       </a>
                       <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./dashboard/dashboard.html">DASHBOARD</a>
                         <a class="dropdown-item" href="./dashboard/deposit.html">DEPOSIT</a>
                         <a class="dropdown-item" href="./dashboard/withdrawal.html">WITHDRAW</a>
-                        <a class="dropdown-item" href="./dashboard/referral.html">REFERRAL</a>
                       </div>
                     </li>
                     <form class="form-inline my-2 my-lg-0">
@@ -51,16 +51,15 @@
             </nav>
         </header>
         <main>
-          
+
             <div class="form-container">
                 <form class="form-signup">
                     <div class="signup">
                         <h3>SIGN UP</h3>
-                        <input type="text" name='name' placeholder="Your name" id="user-name">
+                        <input type="text" name='name' placeholder="Name" id="user-name">
                         <input type="email" name='email' placeholder="Email" id="user-email">
-                        <input type="email" placeholder="Re-type Email">
                         <input type="password" name="password" placeholder="Password" id="user-password">
-                        <input type="password" placeholder="Re-type password">
+                        <input type="text" name="phone" placeholder="Phone">
                     </div>
                     <div class="wallet-details">
                         <div class="bitcon">
@@ -87,16 +86,22 @@
                 </form>
             </div>
         </main>
-        <div class="bottom-container">
+        
+        <footer class="bottom-container">
+          <div class="footer-links">
             <a class="footer-link" href="https://www.linkedin.com/">About Us</a>
             <a class="footer-link" href="https://twitter.com/">FAQ</a>
             <a class="footer-link" href="loginpage.html">LOGIN</a>
             <a class="footer-link" href="https://forexfactory.com/">News</a>
-      
+          </div>
+    
+          <div class="footnote">
             <p class="foot-note">© Elite Miners 2020.</p>
             <p class="foot-note"><i class="fab fa-btc"></i> BITCOIN.</p>
             <p class="foot-note"><i class="fab fa-ethereum"></i>ETHEREUM.</p>
-        </div>
+          </div>
+    
+        </footer>
 
         <script src="./js/signup.js"></script>
     </body>

@@ -225,18 +225,45 @@ img.responsive-img{
   height: 400px;
   object-fit: cover;
 }
+.bottom-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #66BFBF;
+  padding: 10px 0px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
 
+.bottom-container .footer-links{
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.bottom-container .footnote{
+  display: flex;
+  justify-content: center;
+}
+
+.footnote p{
+  margin: 8px;
+}
 .footer-link{
   color: #E5E5E5;
   text-decoration: none;
-  padding: 50px;
-  margin: 10px 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   
 }
 .footer-link:hover{
-  color:#03e3eb;
+  color:#11999E;
 }
 
 @media (max-width:900px ) {

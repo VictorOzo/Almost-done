@@ -5,22 +5,27 @@ nav{
 
 }
 
-.content-container{
+.form-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
-
-.ref-container{
-    width: 90%;
-    height: 60px;
+.form-container p{
+    font-size: 30px;
+}
+.user-container{
+    width: 80%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #17a2b8;
     border-radius: 5px;
 }
 
-.ref-container input{
+.user-container input{
     width: 60%;
     border: 1px solid lightgray;
     border-bottom: 2px solid lightgray;
@@ -28,11 +33,11 @@ nav{
     padding: 6px;
 }
 
-.ref-container input:focus{
+.user-container input:focus{
     outline: none
 }
 
-.ref-container button{
+.user-container button{
     width: 20%;
     border: 1px solid lightgray;
     border-bottom: 2px solid lightgray;
@@ -45,20 +50,7 @@ nav{
 .ref-container button:focus{
     outline: none
 }
-
-.content-container table{
-    width: 90%;
-    height: 40%;
-}
-
-table, td{
-    border: 1px solid lightgray
-}
-
-table td{
-    padding: 8px;
-}
-.bottom-container{
+/* .bottom-container{
     background-color: #66BFBF;
     padding: 50px 0 20px;
     text-align: center;
@@ -78,6 +70,34 @@ table td{
   }
 
 
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #66BFBF;
+    padding: 10px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-container .footer-links{
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottom-container .footnote{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
   @media screen and (max-width: 427px){
     .dashboard{
         width: 100%;
@@ -86,11 +106,11 @@ table td{
         align-items: center;
     }
 
-    .dashboard .dashboard-links, .dashboard-content, .content-container{
+    .dashboard .dashboard-links, .dashboard-content, .form-container{
         width: 100%;
     }
 
-    .ref-container{
+    .user-container{
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -98,5 +118,19 @@ table td{
     .dashboard-content{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .user-container input{
+        width: 90%;
+        margin: 6px;
+    }
+
+    .user-container button{
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .user-container input:last-child{
+        margin-bottom: 0px;
     }
 }

@@ -1,5 +1,8 @@
 
 const dropdown = document.querySelector('.dropdown')
+const loginBtn = document.querySelector('.login')
+const signInBtn = document.querySelector('.sign-in')
+
 
 
 const url = 'http://data.fixer.io/api/latest?access_key=2f0122b7a0ea478a90811c399aa2d117&symbols=USD,AUD,CAD,GBP,JPY&format=1';
@@ -38,12 +41,17 @@ function createCurrencyElement (obj, arrayvalue) {
 
 
 function checkLogin () {
+
     const userInfo = JSON.parse(localStorage.getItem('Credentials'))
 
     if (!userInfo){
-        dropdown.classList.add('show-dropdown')
+        dropdown.classList.toggle('show-dropdown')
     }
-    dropdown.classList.remove('show-dropdown')
+    else{
+        loginBtn.classList.add('show-dropdown')
+        signInBtn.classList.add('show-dropdown')
+    }
+
 
 }
 
