@@ -24,6 +24,11 @@ function retreiveInfo (){
 function checkLogin () {
 
     const userInfo = JSON.parse(localStorage.getItem('Credentials'))
+
+    if (!userInfo){
+        return window.location.assign('../loginpage.html')
+    }
+
     if (!userInfo){
         dropdown.classList.toggle('show-dropdown')
     }

@@ -68,6 +68,7 @@ const registerUser =  (e) => {
         const signupCredentials = dataObj.data
         window.location.replace('./dashboard/deposit.html')
         localStorage.setItem('Credentials', JSON.stringify(signupCredentials))
+        console.log(dataObj)
         
     }).catch(error => console.log(error))
 }
